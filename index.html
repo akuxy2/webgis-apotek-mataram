@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGIS Apotek Mataram</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <h1>WEBGIS SEBARAN APOTEK</h1>
+        <h2>Kota Mataram, Nusa Tenggara Barat</h2>
+    </header>
+
+    <div id="map"></div>
+
+    <img src="icon/kompas.png" 
+         class="compass" 
+         alt="Arah Mata Angin" 
+         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Compass_rose_simple.svg/512px-Compass_rose_simple.svg.png'">
+
+    <div class="legend-box">
+        <h4>KETERANGAN PETA</h4>
+        
+        <div class="legend-item">
+            <img src="icon/apotek.png" alt="Icon" onerror="this.src='https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png'">
+            <span>Lokasi Apotek (Titik)</span>
+        </div>
+        
+        <div class="legend-item">
+            <div class="line-geojson"></div>
+            <span>Batas Kota Mataram</span>
+        </div>
+
+        <hr class="separator">
+        
+        <div class="identitas">
+            <p><strong>PETUNJUK:</strong></p>
+            <p>Klik pada titik untuk melihat Nama Fasilitas & Alamat lengkap.</p>
+            <br>
+            <p><strong>DISUSUN OLEH:</strong></p>
+            <p class="nama-mhs">NILA CAHYANI</p>
+            <p class="nim-mhs">20611053</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
